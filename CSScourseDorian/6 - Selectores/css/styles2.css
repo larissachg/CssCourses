@@ -1,0 +1,55 @@
+/* SELECTORES : Son la forma que tenemos de elegir a que elemento le vamos a dar estilos. */
+
+/* 
+    Selectores Simples 
+        Selectores elementales
+            Selector Universal -> *
+            Selector de tipo o etiqueta -> Nombre de la etiqueta
+        Selectores de atributo
+            id -> id del elemento (#)
+            clase -> clase del elemento (.)
+            otros atributos.
+                [atributo]
+                [atributo=valor]  
+                [atributo^=valor]
+                [atributo*=valor]
+                [atributo$=valor]
+                [atributo|=valor]
+
+    Selectores Compuestos: Son aquellos que requieren mas de una palabra, una palabra y un simbolo, etc.
+        Selectores Agrupados
+        Selectores Combinadores
+                Selector Descendente -> podemos seleccionar un elemento dentro de otro.
+                Selector de Hermano siguiente: Para elementos del mismo nivel -> (+) 
+                Selector de hermanos siguientes: Para seleccionar todos los hermanos siguientes (~) 
+                Selector de hijo directo (>) -> Selecciona SOLO los hijos directos
+        Pseudoclases - Pseudoelementos
+*/
+
+/* Selector de hijo directo */
+.container > p{
+    background-color: aqua;
+}
+
+/* Selector de hermano siguiente */
+.text-2 + h2{
+    /* background-color: blueviolet; */
+}
+
+/* Selector de hermanos siguientes (todos) */
+.text-2 ~ p{
+    /* background-color: brown; */
+}
+
+/* SELECTORES COMBINADORES: Descendente */
+/* div .title-2{
+    background-color: chocolate;
+} */
+
+/* SELECTORES AGRUPADOS: Para dar el mismo estilo a varios elementos sin tener que repetir lo mismo a todos los elementos. Para agruparlos se los separa por coma (,)*/
+/* .text,
+.text-2,
+.text-3,
+.text-4{
+    background-color: cornflowerblue;
+} */

@@ -1,0 +1,159 @@
+/* 
+    Colores
+        La mayoria de las pantallas funcionan con un modo de color aditivo. La suma de RGB da como resultado un blanco.
+        Tenemos varias formas de dar color en CSS.
+            Keywords -> Palabras clave que representan colores https://www.w3.org/wiki/CSS/Properties/color/keywords
+            
+            IMPORTANTE: Recorda que existe el color "transparente"
+        
+        CurrentColor: Es una palabra clave que se puede ussar en lugar de cualquier valor de color y usara el valor ya sea establecido o heredado en la propiedad color.
+
+        RGB/RGBA
+            En el modo RGB tenemos tres canales (Red, Green, Blue) y tenemos 8 bits de color por canal (Cada bit tiene dos posibles valores 0 o 1) lo que significa que tenemos 2^8 posibles valores, que van desde 0 hasta 255.
+
+            Esto nos da un total de 255 * 255 * 255 = 16.581.375 colores.
+
+            Su sintaxis es rgb(R, G, B)
+
+            Si ponemos todos los canales a 0 tendremos un negro puro y si lo ponemos a 255 tendremos un blanco.
+
+            Para movernos por la gama de grises debemos poner los 3 canales al mismo valor, si ponemos los 3 canales a 128 tendremos el gris puro.
+
+            El modo RGB nos da la opcion de utilizar un cuarto canal que corresponderia al canal alpha, es decir la transparencia, y su valor va desde 0 a 1. Tenemos dos sintaxis para utilizar el canal alpha:
+                rgba(R,G,B,A)
+                rgba(R G B / A)
+        
+        Hexadecimal
+            La notacion hexadecimal es la mas comun en desarrollo web, se basa en los mismos principios que el RGB pero escrito en notacion hexadecimal.
+
+            El sistema hexadecimal es un sistema basado en 16 valores del 0 al 15
+            Utiliza los digitos del 0 al 9 y las letras de la A a la F
+
+            En este tipo de notacion tambien necesitamos 256 valores.
+
+            Se compone de 16 caracteres en parejas ya que 16*16=256
+            0 1 2 3 4 5 6 7 8 9 A B C D E F
+            0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+            Para indicar que vamos a usar notacion hexadecimal debemos usar el simbolo de hash/almohadilla # y a continuacion usaremos esta notacion por parejas.
+            #RRGGBB
+            Cuando una pareja usa el mismo valor se puede omitir el segundo valor, siempre que se haga en las 3 parejas.
+
+            rgb(255,255,255) -> #FFFFFF -> #FFF
+            rgb(0,0,0) -> #000000 -> #000
+
+            Tambien tenemos la opcion de usar transparencias en hexadecimal anhadiendo un cuarto canal que sigue las mismas normas.
+
+            rgb(0 0 0 / .5) -> #00000080 ~> #0007
+
+        HSL / HSLA
+            El modo de color HSL es el mas intuitivo para los humanos. Su nombre viene de las siglas Hue (tono) Saturation (saturacion) y lightness (luminancia)
+
+            El primer valor es el angulo en el circulo cromatico donde 0 y 360 sera el color rojo. Hay ciertos valores que pueden servir como referencia para relacionar mejor los colores con sus angulos.
+                0 -> rojo
+                60 -> amarillo
+                120 -> verde
+                180 -> cyan
+                240 -> azul
+                300 -> magenta
+            
+            El segundo valor es la saturacion o intensidad del color.
+                0% -> gris
+                100% -> color puro
+
+            El tercer valor es la luminosidad del color
+                0% -> negro, nada de luz
+                100% -> blanco, luz maxima
+            
+            NOTA: Es importante que aunque el valor de saturacion o luminancia sea 0 hay que poner 0% si no, no funcionara.
+
+            El modo HSL tambien admite transparencia y su sintaxis es la misma que la del modo RGB. Tenemos dos sintaxis disponible:
+                hsla(h,s,l,a)
+                hsl(h s l / a)
+            En ambos casos el valor alpha va de 0 a 1
+
+            Existen otros cuatro modos de color en los que esta trabajando que serian CMYK (Cyan, Magenta, Yellow y Black), HWB (Hue, Whiteness y Blackness), lab (lightness, distance a, distance b) y lch (lightness, chroma, hue), todos estan en el borrador del modulo de color de nivel 4 pero aun no es estandar.
+*/
+
+/* body {
+    background-color: #333;
+    margin: 0;
+    background-color: mediumorchid;
+    color: #333;
+} */
+
+/* TRIANGULO con transparente */
+/* .box {
+    border-top: 300px solid coral;
+    border-left: 350px solid transparent;
+    border-right: 300px solid transparent; } */
+    /* Para que el triangulo apunte derecha (se utiliza border left-top-bottom); apunte izquierda (right-top-bottom); apunte abajo (top-left-right); apunte arriba (bottom-left-right) */
+
+
+/* CURRENTCOLOR */
+
+/* .main {
+    color: aquamarine;
+    background-color: currentColor;
+}
+
+.box {
+    background-color: lightcoral;
+    width: 200px;
+    height: 200px;
+    border: 5px solid currentColor;
+} */
+
+/* RGB/RGBA */
+/* .box {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(0, 0, 255);
+} */
+
+    /* Canal ALPHA (transparencia/opacidad) */
+/* .box-1 {
+    width: 180px;
+    height: 180px; */
+    /* rgb(R, G, B, porcentaje de transparecia 0,.. hasta (1=negro) */
+    /* background-color: rgb(0, 0, 0, 0.1); */
+    /* 2da forma (es lo mismo): rgb (R G B / A) */
+    /* background-color: rgb(0 0 0 / 0.1);
+} */
+
+/* Sombra con Transparencia/Opacidad */
+/* .box-2 {
+    width: 180px;
+    height: 180px;
+    background-color: lightcoral;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 0.5);
+} */
+
+/* Color HEXADECIMAL */
+/* body {
+    background-color: mediumorchid;
+} */
+
+/* .box {
+    width: 180px;
+    height: 180px;
+    background-color: lightcoral ;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 0.5); */
+    /* Sombra con hexadecimal seria lo mismo: */
+    /* box-shadow: 5px 5px 10px #0008;
+} */
+
+/* Color HSL */
+body {
+    /* background-color: hsl(hue, saturation, lightness(mas claro o mas oscuro) Se puede usar con cualquier etiqueta (background, color, border, box-shadow etc)*/
+    background-color: hsl(0, 100%, 30%);
+}
+
+.box {
+    width: 180px;
+    height: 180px;
+    background-color: lightcoral ;
+    /* HSLA */
+    box-shadow: 5px 5px 10px hsl(180, 50%, 50%)
+    
+}

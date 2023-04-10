@@ -1,0 +1,210 @@
+/* 
+    MARGIN:
+        Es la propiedad que nos permite generar espacio entre elementos. 
+        Es un shorthand (propiedad abreviada) que controla los 4 lados posibles a los que dar margenes.
+            margin-top -> Margen Superior
+            margin-right -> Margen Derecho
+            margin-bottom-> Margen Inferior
+            margin-left -> Margen Izquierdo
+    
+        Admite hasta 4 valores que van en el orden de las agujas del reloj.
+            4 valores -> margin: top right bottom left;
+            3 valores -> margin: top left/right bottom;
+            2 valores -> margin: top/bottom left/right;
+            1 valor -> margin: top/right/bottom/left    
+*/
+/* ERRORES COMUNES CON MARGIN */
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/* Para centrar un elemento usen el margin 0 auto: */
+
+body{
+    background-color:aquamarine;
+    color: azure;
+}
+
+/* .title{
+    background-color: blue;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+.block{
+    width: 200px;
+    background-color: purple;
+    height: 200px;
+    margin-top: 100px;
+    /* Sobrepasa los margenes puestos anterior */
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.inline{
+    background-color: lightcoral ;
+    color: inherit;
+    /* Los ELEMENTOS EN LINEA NO tienen MEDIDAS (width-height), el tamanho es segun el contenido que tenga */
+    /* Los ELEMENTOS EN LINEA SOLO tienen MARGENES HORIZONTALES */
+    margin-left: 100px;
+}
+
+/* 
+    PADDING:
+        Es la propiedad que nos permite generar espacio interno entre el borde y la caja.
+        Es un shorthand (propiedad abreviada) que controla los 4 lados posibles a los que dar padding.
+            padding-top -> padding superior
+            padding-right -> padding derecho
+            padding-bottom -> padding inferior
+            padding=left -> padding izquierdo
+            
+        Admite hasta 4 valores que van en el orden de las agujas del reloj.
+            4 valores -> padding: top right bottom left;
+            3 valores -> padding: top left/right bottom;
+            2 valores -> padding: top/bottom left/right;
+            1 valor -> padding: top/right/bottom/left
+*/
+
+.buttons{
+    background-color: cadetblue;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    /* Para separar de la otra caja: */
+    margin-top: 20px;
+}
+
+.button{
+    margin-left: 190px;
+    padding: 20px 30px;
+    /* Se puede englobar todas las propiedades del borde en una sola linea (widht - style - color):*/
+    border: 10px solid red;
+    /* Desglosado seria: */
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+    /* Para darle propiedad a cada linea del borde: */
+    border-right-color: blueviolet;
+    border-right-width: 20px;
+}
+
+/* 
+    Border:
+        Es la propiedad que nos permite modificar el borde de la caja.
+        Es un shorthand (propiedad abreviada) que agrupa 3 propiedades:
+            border-width -> Ancho del borde
+                border-top-width
+                border-right-width
+                border-buttom-width
+                border-left-width
+            border-style -> Estilo del borde
+                border-top-style
+                border-right-style
+                border-buttom-style
+                border-left-style
+                    LISTADO DE VALORES PARA STYLE:
+                        none
+                        hidden
+                        dotted
+                        dashed
+                        solid
+                        double
+                        groove
+                        ridge
+                        inset
+                        outser
+            border-color -> Color del borde
+                border-top-color
+                border-right-color
+                border-buttom-color
+                border-left-color
+ */
+
+ .buttons1, .buttons2, .buttons3, .buttons4, .buttons5, .buttons6, .buttons7, .buttons8, .buttons9, .buttons10{
+    margin-top: 10px;
+}
+
+.button1{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: none;
+}
+
+.button2{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: hidden;
+}
+
+.button3{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: dotted;
+}
+
+.button4{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: dashed;
+}
+
+.button5{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: solid;
+}
+
+.button6{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: double;
+    border-color: brown;
+    border-width: 5px;
+}
+
+.button7{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: groove;
+    border-color: brown;
+    border-width: 10px;
+}
+
+.button8{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: ridge;
+    border-color: brown;
+    border-width: 10px;
+}
+
+.button9{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: inset;
+    border-color: brown;
+    border-width: 10px;
+}
+
+.button10{
+    margin-left: 190px;
+    padding: 10px 20px;
+    border-style: outset;
+    border-color: brown;
+    border-width: 10px;
+}
+
+/* 
+    Box-sizing:
+        Es la que propiedad que nos permite controlar el calculo que hace el navegador a la hora de modificar las propiedades content, padding y border.
+        los 2 valores que podemos darle son:
+            content-box -> Valor por defecto.
+            border-box -> Calculo de tamano del elemento incluyendo el padding y el border. 
+*/
+
+/* Se coloca obligatoriamente al comienzo */
+
+*{
+    box-sizing: border-box;
+}

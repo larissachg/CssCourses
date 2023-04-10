@@ -1,0 +1,89 @@
+/* SELECTORES : Son la forma que tenemos de elegir a que elemento le vamos a dar estilos. */
+
+/* 
+    Selectores Simples 
+        Selectores elementales
+            Selector Universal -> *
+            Selector de tipo o etiqueta -> Nombre de la etiqueta
+        Selectores de atributo
+            id -> id del elemento (#)
+            clase -> clase del elemento (.)
+            otros atributos.
+                [atributo]
+                [atributo=valor]  
+                [atributo^=valor]
+                [atributo*=valor]
+                [atributo$=valor]
+                [atributo|=valor]
+
+    Selectores Compuestos: Son aquellos que requieren mas de una palabra, una palabra y un simbolo, etc.
+        Selectores Agrupados
+        Selectores Combinadores
+        Pseudoclases - Pseudoelementos
+*/
+
+/* SELECTOR UNIVERSAL: selecciona todos los elementos, por lo cual es recomendable usarlo solo para cosas concretas. */
+/* *{
+    background-color: plum;
+} */
+
+/* SELECTOR DE ETIQUETA: Se coloca el nombre de la etiqueta.*/
+/* h1{
+    background-color: turquoise;
+}
+p{
+    background-color: bisque;
+}
+ul{
+    background-color: blueviolet;
+}
+li{
+    background-color: cornflowerblue;
+} */
+
+/* ID DEL ELEMENTO (#) : No es recomendable dar estilos con id ya que son identificadores por lo cual solo puede haber uno, y uno de los principios de CSS es que los estilos sean reutilizables. */
+#title{
+    background-color: chartreuse;
+}
+
+/* CLASE: se recomienda usar siempre ya que se puede reutilizar, no hay limites para las clase. */
+
+.title{
+    background-color: darkred;
+}
+.text{
+    background-color: blue;
+}
+
+/* OTROS ATRIBUTOS */
+
+/* [atributo] : de forma generica */
+[href]{
+    background-color: mediumvioletred;
+}
+
+/* [atributo=valor]: Para un atributo en especial. (Es importante que este dentro de comillas, que el valor sea el mismo para que se seleccione y el orden donde se encuentre ya que en las cascadas los estilos que van debajo preescriben a los de encima) */
+[href="https://google.com"]{
+    background-color: coral; 
+}
+
+/* [atributo^=valor] : Para comprobar si el atributo empieza con el valor indicado (al principio).  */
+[href^="color"]{
+    background-color: aqua;
+}
+
+/* [atributo*=valor] : Se selecciona el valor que coincida independientemente de donde este (al principio, medio o final). */
+[href*="modo"]{
+    background-color: green;
+}
+
+/* [atributo$=valor] : Se selecciona el valor que coincida si termina con el valor que le decimos (al final). */
+[href$="rojo"]{
+    background-color:crimson;
+}
+
+
+/* [atributo|=valor] : Palabra y guion */
+[lang|="en-GB"]{
+    background-color: darkgoldenrod;
+}

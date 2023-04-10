@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRACTICA SASS</title>
+    <link rel="stylesheet" href="scss/app.css" />
+  </head>
+
+  <body>
+    <header class="header header__inicio">
+      <div class="header__contenedor contenedor">
+        <div class="header__barra">
+          <div class="header__logo">
+            <img class="logo" src="/img/logo.svg" alt="logo" />
+          </div>
+          <nav class="navegacion">
+            <a class="activo" href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="procesos.html">Proceso</a>
+            <a href="menu.html">Menú</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contexto.html">Contacto</a>
+          </nav>
+        </div>
+
+        <div class="header__title">
+          <h1>Disfruta una deliciosa taza de café</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="main__contenedor contenedor">
+      <div class="main__contain">
+        <div class="aboutUs">
+          <div class="aboutUs__info">
+            <h3 class="info__subtitle">Conoce Mas</h3>
+            <h2 class="info__title">Sobre Nosotros</h2>
+            <img class="info__seed" src="/img/cafe.svg" alt="semillas cafe" />
+            <p class="info__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab,
+              tenetur, perferendis ipsa tempora soluta sunt hic consectetur
+              blanditiis at unde, assumenda labore doloribus neque obcaecati
+              vero odit aut adipisci ex! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Blanditiis ipsa, rem optio consectetur nemo sunt
+              ut placeat. In aperiam distinctio atque eveniet culpa! Similique,
+              magnam? Cumque voluptatibus atque inventore dolor.
+            </p>
+          </div>
+          <div class="aboutUs__icon">
+            <div class="icon__contain">
+              <img src="/img/icono_cafe.svg" alt="coffee" />
+              <p class="icon__text">Cafe</p>
+            </div>
+            <div class="icon__contain">
+              <img src="/img/icono_postre.svg" alt="dessert" />
+              <p class="icon__text">Postre</p>
+            </div>
+            <div class="icon__contain">
+              <img src="/img/icono_te.svg" alt="tea" />
+              <p class="icon__text">Te</p>
+            </div>
+          </div>
+        </div>
+        <div class="main__gallery">
+          <div class="gallery__info">
+            <h3 class="info__subtitle">Vive la</h3>
+            <h2 class="info__title">Experiencia</h2>
+            <img class="info__seed" src="/img/cafe.svg" alt="semillas coffee" />
+          </div>
+          <div class="gallery__grid">
+            <img class="item1" src="/img/galeria/galeria_01.jpg" alt="gallery1" />
+            <img class="item2" src="/img/galeria/galeria_02.jpg" alt="gallery2" />
+            <img class="item3" src="/img/galeria/galeria_03.jpg" alt="gallery3" />
+            <img class="item4" src="/img/galeria/galeria_04.jpg" alt="gallery4" />
+            <img class="item5" src="/img/galeria/galeria_05.jpg" alt="gallery5" />
+            <img class="item6" src="/img/galeria/galeria_06.jpg" alt="gallery6" />
+            <img class="item7" src="/img/galeria/galeria_07.jpg" alt="gallery7" />
+            <img class="item8" src="/img/galeria/galeria_08.jpg" alt="gallery8" />
+            <img class="item9" src="/img/galeria/galeria_09.jpg" alt="gallery9" />
+            <img class="item10" src="/img/galeria/galeria_10.jpg" alt="gallery10" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="menu">
+      <div class="menu__contenedor contenedor">
+        <div class="menu__title">
+          <h3 class="info__subtitle info__subtitle--white">
+            Nuest ro Delicioso
+          </h3>
+          <h2 class="info__title info__title--white">Menu</h2>
+        </div>
+        <div class="menu__contain">
+          <div class="menu__coffee">
+            <h2 class="info__title info__title--white">Cafe</h2>
+            <div class="coffee__item">
+              <div class="item1">
+                <div class="item__info">
+                  <p class="info__name">Café Latte</p>
+                  <p class="info__descripcion">
+                    Café Espresso con leche caliente evaporada
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$25</p>
+                </div>
+              </div>
+              <div class="item2">
+                <div class="item__info">
+                  <p class="info__name">Café Mocha</p>
+                  <p class="info__descripcion">Espresso con crema batida</p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$30</p>
+                </div>
+              </div>
+              <div class="item3">
+                <div class="item__info">
+                  <p class="info__name">Café Americano</p>
+                  <p class="info__descripcion">Café Negro</p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$30</p>
+                </div>
+              </div>
+              <div class="item4">
+                <div class="item__info">
+                  <p class="info__name">Cappucino</p>
+                  <p class="info__descripcion">
+                    Espresso con una capa suave de espuma
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$25</p>
+                </div>
+              </div>
+              <div class="item5">
+                <div class="item__info">
+                  <p class="info__name">Café Mocha Frio</p>
+                  <p class="info__descripcion">
+                    Espresso, dulce con mocha y leche.
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$29</p>
+                </div>
+              </div>
+              <div class="item6">
+                <div class="item__info">
+                  <p class="info__name">Mocha Frio Quemado</p>
+                  <p class="info__descripcion">
+                    Espresso, hielo, con azucar quemada y mantequilla.
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$35</p>
+                </div>
+              </div>
+              <div class="item7">
+                <div class="item__info">
+                  <p class="info__name">Latte con Carameloo</p>
+                  <p class="info__descripcion">Espresso, leche y caramelo.</p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$39</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__food">
+            <h2 class="info__title info__title--white">Comida</h2>
+            <div class="food__item">
+              <div class="item1">
+                <div class="item__info">
+                  <p class="info__name">Baguette de Pollo</p>
+                  <p class="info__descripcion">
+                    Delicioso Baguette con pollo a la plancha
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$45</p>
+                </div>
+              </div>
+              <div class="item2">
+                <div class="item__info">
+                  <p class="info__name">Baguette Pollo y Queso</p>
+                  <p class="info__descripcion">
+                    Baguette combinado con Pollo y Queso Manchego
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$50</p>
+                </div>
+              </div>
+              <div class="item3">
+                <div class="item__info">
+                  <p class="info__name">Baguette con Tocino</p>
+                  <p class="info__descripcion">
+                    Baguette con especias y verduras, además de tocino
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$50</p>
+                </div>
+              </div>
+              <div class="item4">
+                <div class="item__info">
+                  <p class="info__name">Baguette de Jamón</p>
+                  <p class="info__descripcion">
+                    Delicioso Baguette con Jamón y Especias
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$65</p>
+                </div>
+              </div>
+              <div class="item5">
+                <div class="item__info">
+                  <p class="info__name">Baguette con Jamón, Queso y Tocino</p>
+                  <p class="info__descripcion">El especial de la casa</p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$69</p>
+                </div>
+              </div>
+              <div class="item6">
+                <div class="item__info">
+                  <p class="info__name">Sandwich de Pollo</p>
+                  <p class="info__descripcion">
+                    Delicioso sandwich con Pollo y especies
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$65</p>
+                </div>
+              </div>
+              <div class="item7">
+                <div class="item__info">
+                  <p class="info__name">Sandwich de Jamón y queso</p>
+                  <p class="info__descripcion">
+                    Queso Amarillo con Jamón y Queso
+                  </p>
+                </div>
+                <div class="item__price">
+                  <p class="info__price">$59</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footer__text">Todos los derechos reservados. La Cafetería</p>
+    </footer>
+  </body>
+</html>

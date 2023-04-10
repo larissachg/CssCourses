@@ -1,0 +1,49 @@
+@use '../base/variables' as *;
+
+@mixin mobile {
+    @media (min-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+      @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+      @content;
+  }
+}
+
+//MEDIA QUERY MANAGER
+/*
+0 - 600px: Phone
+600 - 900px: tablet portrait
+900 - 1200px: Table landscape
+[1200 - 1800] is where our normal styles apply
+1800px + : Big desktop
+*/
+// @mixin responsiveDesign($breackpoint) {
+//     @if $breackpoint == $mobile {
+//       @media only screen and (min-width: $mobile) {
+//         //600px
+//         @content;
+//       }
+//     }
+//     @if $breackpoint == $tablet {
+//       //1200px
+//       @media only screen and (min-width: $tablet) {
+//         @content;
+//       }
+//     }
+//     @if $breackpoint == $desktop {
+//       //1800px
+//       @media only screen and (min-width: $desktop) {
+//         @content;
+//       }
+//     }
+//   }
+  

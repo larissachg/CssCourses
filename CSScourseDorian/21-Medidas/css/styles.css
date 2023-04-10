@@ -1,0 +1,152 @@
+/* 
+    Las medidas en CSS se pueden agrupar en 2 grupos: absolutas y relativas.
+    
+    Las medidas absolutas NO CAMBIAN y siempre mantendran su tamanho independientemente del dispositivos o la interaccion del usuario.
+    La mas usada es px (pixeles) cuya medida es de 1/96 de 1in, pero existen otras como:
+        cm (centimetros) -> 1cm = 96px/2,54
+        mm (milimetros) -> 1mm = 1/10 de 1cm
+        Q (cuarto de milimetro) -> 1Q = 1/40 de 1cm
+        in (inches, pulgadas) -> 1in = 2,54cm = 96px
+        pc (picas) -> 1pc = 1/16 de 1in
+        pt (puntos) -> 1pt = 1/72 de 1in
+
+    Las medidas relativas SIEMPRE dependen de un contexto son las que se recomienda utilizar en la gran mayoria de ocasiones porque nos van a permiitr que todos los elementos escalen proporcionalmente.
+    Las mas usadas son em, rem, %, vw, vh, vmin y vmax aunque tenemos otras como:
+        ex -> Altura x de la fuente del elemento
+        ch -> La medida del ancho del fligo "0" de la letra del elemento
+        lh -> Altura de la linea del elemento
+
+    rem -> Corresponde a la medida de la "m" de la raiz del documento (html).
+        ejemplo: 16px = 1rem
+
+    em -> Corresponde a la medida de la "m" del contexto donde nos encontremos.
+
+    El estandar del tamanho de fuente por defecto en la raiz del documento es 16px, y NO ES RECOMENDABLE MODIFICARLO.
+
+    NOTA: Tanto "em" como "rem" se calcula en base a la propiedad font-size (tamanho de fuente)
+
+    WIDTH:
+        % -> Cuando usamos porcentage usamos de referencia el tamanho del contenedor y el navegador calcula ese porcentage. Esto no ocurre cuando usamos transform.
+
+        auto -> Cuando usamos auto le pedimos al navegador que calcule en funcion del espacio disponible.
+
+    HEIGHT:
+        % -> Cuando estamos dentro de un contenedor, este tiene que tener un alto declarado, si no no podra calcular el porcentaje. Si se le aplica una medida con porcentaje se sustituira automaticamente por auto.
+
+        auto -> Cuando utilizamos auto el alto lo calculara el navegador en base al contenido del elemento
+
+    NOTA: Height es una propiedad que tenes que usar con mucho cuidado. Si no es necesario establecer un alto, dejad que el contenido sea el que decida el alto del elemento.
+
+    VIEWPORT
+        Es el area util donde se mostrara la pagina web. IMPORTANTE, tene en cuenta que es el area visible sin hacer scroll.
+
+        Podemos usar el viewport como medida de varias formas:
+            vw -> Viewport Width, hace referencia al ancho del viewport.
+            vh -> Vierport Height, hace referencia al alto del viewport.
+            vmax -> Utiliza el valor mas grande entre el ancho y el alto del viewport.
+            vmin -> Utiliza el valor mas pequenho entre el ancho y el alto del viewport.
+
+            1vw = 1% del ancho del viewport
+            1vh = 1% del alto del viewport
+            1vmin = 1% del valor que sea mas pequenho del viewport
+            1vmax = 1% del valor que sea mas grande del viewport
+
+    Limitadores al ancho y alto
+        Cuando establecemos un width y/o un height con una medida que es relativa, es posible que no queramos que se respete esa medida en todos los casos.
+        Para ello tenemos propiedades que limitan esas medidas:
+            min-width: Indica el ancho minimo que puede alcanzar el elemento.
+            max-width: Indica el ancho maximo que puede alcanzar el elemento.
+            min-height: Indica el alto minimo que puede alcanzar el elemento.
+            max-height: Indica el alto maximo que puede alcanzar el elemento. ,
+*/
+
+body {
+    background-color: #333;
+    color: lightcoral;
+    margin: 0
+}
+
+/* EM y REM */
+/* .title { */
+    /* Siempre va a ser esa cantidad por defecto 16px (2x16px= 32px) 
+    Para tamanho de fuente siempre usar REM    */
+    /* font-size: 2rem;
+} */
+
+/* .link {
+    background-color: lightcoral;
+    color: #333;
+    padding: 1rem 2rem */ /* es igual a 16px 32px */;
+    /* border-radius: 0.5rem  *//* es igual a 8px */;
+    /* font-size: 3rem;
+} */
+
+/* .link-2 {
+    background-color: lightblue;
+    color: #333;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    font-size: 2rem; } */
+    /* Se usa EM cuando la medida tiene que crecer proporcionalmente al tamanho del texto*/
+
+
+/* WIDTH EN % Y WIDTH AUTO */
+/* % respecto al contenedor*/
+/* .box {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.box-children {
+    background-color: steelblue;
+    width: 50%; 
+    height: 50%; } */
+    /* Es igual a 100px (porque es la mitad del width de 200px del contenedor: box padre) */ 
+
+
+/* Medidas respecto al Body */
+/* .box {
+    width: auto;
+    margin: 0 50px;
+    height: 200px;
+    background-color: aquamarine;
+} */
+
+/* .box-children {
+    background-color: steelblue;
+    width: auto;  */
+    /* Con width auto el navegador calcula en funcion del espacio que tiene disponible (cuanto de ancho le puede dar al elemento*/
+    /* height: 25%; 
+    margin-left: 50px;
+} */
+
+/* HEIGHT AUTO */
+/* .header {
+    background-color: lightblue;
+    text-align: center;
+} */
+/* .box {
+    width: 300px;
+    height: auto; */ /* Es igual al 100%, el navegador coloca el espacio segun su contenido. */
+   /*  padding-bottom: 30px; */ /* Ya sea que el contenido aumente o disminuya siempre va a sobrar ese espacio. */
+    /* background-color: aquamarine;
+} */
+
+/* VIEWPORT % */
+.header {
+    background-color: lightblue;
+    text-align: center;
+}
+
+.box {
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+}
+
+.box-children {
+    background-color: steelblue;
+    width: 50%; 
+    height: 100%;
+}

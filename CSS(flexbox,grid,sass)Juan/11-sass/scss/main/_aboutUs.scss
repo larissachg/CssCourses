@@ -1,0 +1,39 @@
+@use "../base/mixins" as m;
+
+.aboutUs {
+  .info__text {
+    margin-bottom: 5.3rem;
+    line-height: 1.9;
+  }
+
+  &__icon {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    @include m.tablet {
+      flex-direction: row;
+      justify-content: center;
+      gap: 12rem;
+    }
+    @include m.desktop {
+        justify-content: space-around;
+      }
+  }
+  .icon__contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    img {
+      width: 12rem;
+    }
+
+    .icon__text {
+      font-size: 3rem;
+    }
+  }
+}
