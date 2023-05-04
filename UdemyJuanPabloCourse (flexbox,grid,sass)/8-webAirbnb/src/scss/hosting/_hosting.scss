@@ -7,7 +7,7 @@
         grid-template-columns: repeat(4,30rem);
         gap: 4rem;
         overflow-x: scroll;
-        overflow-y: hidden; //No se para que es
+        overflow-y: hidden;
         scroll-snap-type: x mandatory;
 
         @include m.tablet{
@@ -22,7 +22,7 @@
     }
 
     &__photo{
-        scroll-snap-align: center; //No se para que es
+        scroll-snap-align: center;
 
         &-img{
             border-radius: 1rem;
