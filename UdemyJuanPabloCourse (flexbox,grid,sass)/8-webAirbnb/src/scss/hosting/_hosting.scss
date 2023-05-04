@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.hosting{
+    &__gallery{
+        display: grid;
+        grid-template-columns: repeat(4,30rem);
+        gap: 4rem;
+        overflow-x: scroll;
+        overflow-y: hidden; //No se para que es
+        scroll-snap-type: x mandatory;
+
+        @include m.tablet{
+            grid-template-columns: repeat(2,1fr);
+            gap: 2rem;
+        }
+
+        @include m.desktop{
+            grid-template-columns: repeat(4,1fr);
+            gap: 2rem;
+        }
+    }
+
+    &__photo{
+        scroll-snap-align: center; //No se para que es
+
+        &-img{
+            border-radius: 1rem;
+        }
+        &-info{
+            margin: 1.5rem 0;
+            font-size: 1.8rem;
+        }
+    }
+}

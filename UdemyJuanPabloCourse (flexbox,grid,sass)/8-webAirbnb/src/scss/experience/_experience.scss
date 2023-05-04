@@ -1,0 +1,39 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.experience{
+    margin: 5rem auto;
+
+    &__gallery{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(3,30rem);
+        gap: 2rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+
+        @include m.tablet{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+
+    &__photo{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &-img{
+            border-radius: 1rem;
+        }
+
+        &-title{
+            font-weight: 900;
+        }
+
+        &-info{
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

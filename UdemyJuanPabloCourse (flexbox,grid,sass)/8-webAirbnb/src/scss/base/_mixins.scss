@@ -1,0 +1,36 @@
+@use "../base/variables" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin footerLink {
+  text-align: left;
+  color: $gray;
+  margin: 0.5rem 0;
+}
+
+@mixin shadow{
+    background-color: $iceColor;
+    border-radius: 3rem;
+    box-shadow: 0 3px 7px 0 $gray;
+}

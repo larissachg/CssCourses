@@ -1,0 +1,60 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.form {
+  background-color: $white;
+  border-radius: 5rem;
+  padding: 2rem 0;
+  margin: 5rem auto 2rem;
+  @include m.flexCol();
+  text-align: left;
+  box-shadow: 0 3px 7px 0 $gray;
+
+  @include m.tablet{
+    
+  }
+
+  @include m.desktop{
+    flex-direction: row;
+    max-width: 78%;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  &__field {
+    padding: 1rem 2rem;
+    @include m.flexCol();
+
+    &:hover{
+      @include m.shadow();
+    }
+  }
+
+  &__label {
+    font-size: 1.3rem;
+    font-weight: 900;
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    color: $gray;
+    border: none;
+    font-family: $font-family;
+  }
+
+  &__search{
+    border: none;
+    margin: 1rem 2rem;
+    border-radius: 3rem;
+    padding: 1.3rem 2rem;
+    background-image: radial-gradient(circle, $redLight 0, $redDark 100%);
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    &:hover{
+      @include m.shadow();
+    }
+  }
+}

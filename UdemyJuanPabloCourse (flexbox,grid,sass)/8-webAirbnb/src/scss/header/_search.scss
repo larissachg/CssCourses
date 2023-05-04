@@ -1,0 +1,29 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.search {
+  margin-top: 5rem;
+  text-align: center;
+
+  @include m.tablet {
+    margin-top: 29rem;
+  }
+
+  &__title {
+    font-weight: 900;
+  }
+
+  &__button {
+    background-color: $white;
+    padding: 1.8rem 4rem;
+    border-radius: 3rem;
+    color: $redLight;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 2rem;
+
+    @include m.tablet {
+      display: inline-block;
+    }
+  }
+}

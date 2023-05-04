@@ -1,0 +1,54 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.footer {
+  background-color: $iceColor;
+  border-top: 2px solid $line;
+  padding-top: 5rem;
+  font-size: 1.4rem;
+
+  &__contain{
+    @include m.tablet{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 4rem;
+    }
+
+    @include m.desktop{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 4rem;
+    }
+  }
+
+  &__title {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__links {
+    &-link {
+      @include m.footerLink();
+    }
+  }
+
+  &__barra {
+    margin-top: 2rem;
+    border-top: 2px solid $line;
+    padding: 2rem 0;
+  }
+
+  &__barraNav {
+    
+    &-link {
+      @include m.footerLink();
+    }
+
+    @include m.tablet{
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}

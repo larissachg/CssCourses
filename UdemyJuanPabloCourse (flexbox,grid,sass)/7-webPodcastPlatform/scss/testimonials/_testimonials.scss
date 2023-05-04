@@ -1,0 +1,59 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.testimonials {
+  padding-top: 3rem;
+  @include m.flexCol();
+  align-items: center;
+  gap: 4rem;
+
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    padding: 5rem 0;
+  }
+
+  &__title {
+    @include m.title();
+  }
+
+  &__title::after {
+    @include m.line($green);
+  }
+
+  &__testimony {
+    border: 5px solid $gray;
+    background-color: $green;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    padding: 2rem;
+
+    @include m.tablet {
+      max-width: 70%;
+    }
+    &:nth-child(2) {
+      @include m.tablet {
+        margin-left: 10%;
+      }
+    }
+
+    &:nth-child(3) {
+        @include m.tablet {
+          margin-left: 20%;
+        }
+      }
+      &:nth-child(4) {
+        @include m.tablet {
+          margin-left: 30%;
+        }
+      }
+  }
+
+  &__icon {
+    max-width: 5rem;
+    padding-top: 1rem;
+  }
+}

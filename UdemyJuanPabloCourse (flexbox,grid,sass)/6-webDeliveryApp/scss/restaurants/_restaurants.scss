@@ -1,0 +1,23 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.restaurants{
+    background-color: $bgsection;
+    color: $textgray;
+    padding-bottom: 5rem;
+
+    &__title{
+        padding: 5rem 0;
+    }
+
+    &__review{
+        @include m.flexCol();
+        gap: 2rem;
+
+        @include m.tablet{
+            @include m.gridCol();
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+        }
+    }
+}

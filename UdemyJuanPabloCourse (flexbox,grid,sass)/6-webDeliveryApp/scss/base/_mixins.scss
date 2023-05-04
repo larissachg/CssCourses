@@ -1,0 +1,52 @@
+@use "../base/variables" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin button($bgcolor, $text) {
+  background-color: $bgcolor;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  width: 100%;
+  color: $text;
+  border: none;
+  transition: background-color, 0.3s ease;
+}
+
+@mixin flexCol() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexRow() {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin gridCol() {
+  display: grid;
+  align-items: center;
+}
+
+@mixin gapInput() {
+  align-items: start;
+  width: 100%;
+  gap: 1rem;
+}

@@ -1,0 +1,25 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.destination{
+    &__places{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+
+        @include m.tablet{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        @include m.desktop{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+
+    &__place{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+}
