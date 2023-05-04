@@ -1,0 +1,17 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.statistics{
+    margin-top: 7rem;
+    &__title{
+        @include m.title();
+    }
+
+    &__title::after{
+        @include m.line($green);
+    }
+
+    &__graphic{
+        margin: 2rem 0 3rem 0;
+    }
+}

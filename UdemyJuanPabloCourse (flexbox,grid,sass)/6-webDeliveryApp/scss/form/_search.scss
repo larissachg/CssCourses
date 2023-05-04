@@ -1,0 +1,26 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.search {
+    @include m.flexCol();
+    gap: 1rem;
+  
+    &__restaurant {
+      @include m.flexCol();
+      @include m.gapInput();
+    }
+    &__food {
+      @include m.flexCol();
+      @include m.gapInput();
+    }
+    &__input {
+      width: 100%;
+      border: none;
+      padding: 1.5rem;
+      font-size: 1.7rem;
+  
+      @include m.desktop {
+        font-size: 1.55rem;
+      }
+    }
+  }  

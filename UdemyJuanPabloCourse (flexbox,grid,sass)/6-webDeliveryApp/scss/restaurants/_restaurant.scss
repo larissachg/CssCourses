@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.restaurant{
+    background-color: $textwhite;
+    @include m.flexCol();
+    padding: 4rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2.6rem -0.8rem $shadow;
+
+    @include m.tablet{
+        @include m.flexRow();
+    }
+
+    &__logo{
+        max-width: 20rem;
+
+        @include m.tablet{
+            width: 14rem
+        }
+    }
+
+    &__info{
+        @include m.flexCol();
+        gap: 1rem;
+        line-height: 1.7;
+
+        @include m.tablet{
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+    &__name{
+        color: $bgred;
+        font-size: 2.4rem;
+    }
+}

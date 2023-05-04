@@ -1,0 +1,61 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.downloadApp{
+    padding: 5rem 0;
+    background-color: $bgsection;
+    &__contain{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5rem;
+
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+
+        }
+    }
+
+    &__screen{
+        align-self: center;
+        max-width: 30rem;
+        transition: .3s;
+
+        &:hover{
+            transform: rotate(4deg) scale(1.2);
+        }
+
+        @include m.tablet{
+            margin: auto;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 2.6rem;
+        color: $textgray;
+    }
+    &__text{
+        font-size: 2rem;
+        color: $textblack;
+        margin-bottom: 1rem;
+    }
+
+    &__store{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 2rem;
+    }
+    &__image{
+        max-width: 30rem;
+        margin: auto;
+        transition: .4s;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+}

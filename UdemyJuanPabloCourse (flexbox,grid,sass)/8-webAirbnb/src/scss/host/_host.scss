@@ -1,0 +1,61 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.host {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: linear-gradient(
+      to bottom,
+      $black 0%,
+      $black 50%,
+      transparent 50%
+    ),
+    url(/src/img/anfitrion.jpg);
+  background-size: 100%, 70rem;
+  background-repeat: no-repeat;
+  background-position: center, center 200%;
+  row-gap: 12rem;
+  padding: 5rem;
+
+  @include m.tablet {
+    grid-template-rows: unset;
+    background-image: linear-gradient(
+        to right,
+        $black 0%,
+        $black 45%,
+        transparent 55%
+      ),
+      url(/src/img/anfitrion.jpg);
+    background-size: 100%, auto;
+    background-position: center, 50% 30%;
+    padding: 13rem 5rem;
+  }
+
+  @include m.desktop {
+    background-position: center, right center;
+    padding: 15rem 5rem;
+  }
+
+  &__contain {
+    color: $white;
+
+    @include m.tablet {
+      max-width: 50%;
+    }
+  }
+
+  &__button {
+    background-color: $white;
+    color: $black;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+
+    @include m.tablet {
+      max-width: 70%;
+    }
+  }
+}

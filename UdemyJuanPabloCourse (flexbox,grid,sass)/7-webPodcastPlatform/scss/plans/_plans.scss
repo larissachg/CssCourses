@@ -1,0 +1,27 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.plans{
+    padding-top: 7rem;
+    background-color: $gray;
+    color: $white;
+    
+    &__title{
+        @include m.title();
+        color: $white;
+    }
+    &__title::after{
+        @include m.line($green);
+    }
+
+    &__options{
+        padding: 2rem 0 3rem 0;
+        text-align: center;
+
+        @include m.tablet{
+            padding: 8rem 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@use "../base/variables" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin bgImage($url, $colorDegradado) {
+  background-image: linear-gradient($colorDegradado 0%, $colorDegradado 100%),
+    url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin title {
+  display: inline-block;
+  margin-bottom: 6rem;
+}
+
+@mixin line($bgColor) {
+  background-color: $bgColor;
+  display: block;
+  content: "";
+  height: 1rem;
+  margin: -2rem 0;
+}
+
+@mixin button($bgColor) {
+  background-color: $bgColor;
+  border: none;
+  color: $gray;
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color, 0.3s ease;
+}

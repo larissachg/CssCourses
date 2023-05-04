@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+//FONT
+$font_principal: 'Roboto', sans-serif;
+
+//RESPONSIVE DESIGN
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+//COLORS
+$bgred: hsl(356, 77%, 61%);
+$bgredhover: hsl(356, 77%, 51%);
+$bggray: hsl(199, 18%, 33%);
+$bggrayhover: hsl(199, 19%, 23%);
+$textblack: hsl(0, 0%, 0%);
+$textwhite: hsl(0, 0%, 100%);
+$textgray: hsl(0, 0%, 35%);
+$textspan: hsl(199, 11%, 46%);
+$bgsection: hsl(200, 9%, 93%);
+$shadow: hsl(199, 9%, 63%);

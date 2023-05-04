@@ -1,0 +1,32 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.nav {
+  @include m.flexCol();
+  width: 100%;
+  gap: 2rem;
+
+  @include m.desktop {
+    @include m.flexRow();
+    width: auto;
+  }
+
+  &__link {
+    color: $textblack;
+    font-size: 2rem;
+    font-weight: 700;
+
+    &--button {
+      @include m.button($bgred, $textwhite);
+      transition: background-color, 0.3s ease;
+
+      @include m.tablet {
+        width: auto;
+      }
+
+      &:hover {
+        background-color: $bgredhover;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.create{
+    margin: 3rem auto;
+
+    &__contain{
+        @include m.flexCol();
+        gap: 4.5rem;
+        text-align: left;
+
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 6.5rem 0;
+            gap: 2rem;
+            align-items: center;
+        }
+    }
+
+    &__info{
+        padding-bottom: 2rem;
+    }
+
+    &__title{
+        @include m.title();
+    }
+
+    &__title::after{
+        @include m.line($green);
+    }
+}

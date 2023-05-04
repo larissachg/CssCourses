@@ -1,0 +1,9 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  background-image: url(/src/img/header.jpg);
+  background-position: 50%;
+  background-size: cover;
+  padding: 3rem 0 20rem;
+}

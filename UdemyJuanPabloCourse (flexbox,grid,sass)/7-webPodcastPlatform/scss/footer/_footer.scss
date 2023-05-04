@@ -1,0 +1,50 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.footer {
+  background-color: $gray;
+  color: $white;
+
+  &__contain {
+    padding: 5rem 0;
+    border-bottom: 2px solid $green;
+
+    @include m.tablet {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 4rem;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 5rem;
+    @include m.tablet{
+        margin: 0 0 0 3rem;
+    }
+  }
+
+  &__section {
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    color: $green;
+    margin-bottom: 1rem;
+    @include m.tablet{
+        margin-bottom: 2rem;
+    }
+  }
+
+  &__link {
+    text-align: left;
+    color: $white;
+  }
+
+  &__copyright {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    
+  }
+}
