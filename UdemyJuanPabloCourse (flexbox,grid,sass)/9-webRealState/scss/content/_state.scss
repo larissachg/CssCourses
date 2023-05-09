@@ -1,0 +1,75 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.state {
+  margin: 5rem auto;
+
+  @include m.tablet{
+    margin: 10rem auto 5rem;
+  }
+
+  &__title {
+    @include m.title();
+
+    &::after {
+      @include m.lineDeco();
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: 2rem;
+
+    @include m.tablet{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+  &__house {
+    background-color: $white;
+  }
+  
+  @for $i from 1 through 6 {
+    $imagen: "/src/img/propiedad_" + $i + ".jpg";
+    &__house:nth-child(#{$i}) &__photo {
+      background-image: linear-gradient(
+        180deg, transparent 0, $gradient
+        ),
+        url($imagen);
+    }
+  }
+  
+  &__photo {
+    aspect-ratio: 5/3;
+    background-size: 110%;
+    position: relative;
+
+    &-name {
+      position: absolute;
+      bottom: 1rem;
+      color: #fff;
+      font-size: 2.4rem;
+      left: 1rem;
+
+      @include m.tablet{
+        font-size: 2rem;
+      }
+
+      @include m.desktop{
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  &__info{
+    padding: 3rem 2rem;
+
+    &-price{
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    &-button{
+      @include m.button($blueGray, $white);
+    }
+  }
+}

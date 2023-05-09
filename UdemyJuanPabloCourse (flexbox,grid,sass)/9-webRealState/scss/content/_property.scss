@@ -1,0 +1,61 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.property{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+
+    @include m.tablet{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: none;
+    }
+
+    &__photo{
+        background-image: url(/src/img/destacada.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include m.tablet{
+            background-size: auto;
+            background-position: 80%, left;
+        }
+
+        @include m.desktop{
+            background-position: 60%, left;
+        }
+    }
+
+    &__info{
+        background-color: $blueGray;
+        color: $white;
+        padding: 7rem 7rem 5rem 7rem;
+        @include m.flexCol();
+        align-items: start;
+        gap: 2rem;
+
+        @include m.tablet{
+            padding: 11rem 6rem;
+        }
+
+        @include m.desktop{
+            padding: 13rem 40rem 13rem 6rem;
+        }
+
+        &-title{
+            text-transform: uppercase;
+        }
+        &-text{
+            font-size: 1.8rem;
+        }
+        &-price{
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        &-button{
+            @include m.button($white, $blueGray);
+            text-transform: capitalize;
+            @include m.tablet{
+                width: 100%;
+            }
+        }
+    }
+}

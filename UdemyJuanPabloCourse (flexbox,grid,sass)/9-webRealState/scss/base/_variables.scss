@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// FUENTES
+$font_principal:'Open Sans', sans-serif;
+$font_secundary: 'Roboto';
+
+$mobile: 480px;
+$tablet: 811px;
+$desktop: 1024px;
+
+// COLORES
+$white: white;
+$black: black;
+$gradient: rgba(0,0,0,.7);
+$iceColor: hsl(0, 0%, 94%);
+$blueGray: hsl(220, 25%, 31%); 
+$blueDecoration: hsl(220, 25%, 51%);
+$blueGrayBg: hsla(220, 25%, 31%, 0.9);
+$footer: hsl(219, 25%, 21%);
