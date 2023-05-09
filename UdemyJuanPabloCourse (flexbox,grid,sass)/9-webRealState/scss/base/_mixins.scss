@@ -1,0 +1,79 @@
+@use "../base/variables" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin title{
+  font-weight: 400;
+    & span {
+      font-weight: 700;
+    }
+}
+
+@mixin lineDeco {
+  background-image: linear-gradient(
+    90deg,
+    $blueGray 0,
+    $blueGray 50%,
+    $blueDecoration 0,
+    $blueDecoration
+  );
+  content: "";
+  display: block;
+  height: 1rem;
+  margin-top: 1rem;
+  width: 15rem;
+}
+
+@mixin button($bgColor, $textColor) {
+  background-color: $bgColor;
+  display: block;
+  padding: 1.5rem 4rem;
+  color: $textColor;
+  font-size: 2rem;
+  font-weight: 700;
+  transition-property: background-color;
+  transition-duration: .3s;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+      width: auto;
+  }
+  &:hover {
+      background-color: darken( $bgColor, 10% );
+  }
+}
+
+@mixin quote{
+    background-image: url(/src/img/quote.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 4rem;
+    margin-right: 1rem;
+    width: 4rem;
+}
