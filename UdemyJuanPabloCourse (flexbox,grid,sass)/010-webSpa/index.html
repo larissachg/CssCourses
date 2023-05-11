@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Salon de Belleza</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__block container">
+        <img class="header__logo" src="./src/img/logo.svg" alt="logo" />
+
+        <div class="header__social">
+          <a class="header__social-link" href="#"
+            ><img src="./src/img/icono_facebook.svg" alt="Facebook"
+          /></a>
+          <a class="header__social-link" href="#"
+            ><img src="./src/img/icono_twitter.svg" alt="Twitter"
+          /></a>
+          <a class="header__social-link" href="#"
+            ><img src="./src/img/icono_instagram.svg" alt="Instagram"
+          /></a>
+          <a class="header__social-link" href="#"
+            ><img src="./src/img/icono_youtube.svg" alt="YouTube"
+          /></a>
+          <a class="header__social-link" href="#"
+            ><img src="./src/img/icono_tiktok.svg" alt="TikTok"
+          /></a>
+          <a class="header__social-link" href="#"
+            ><img src="./src/img/icono_pinterest.svg" alt="Pinterest"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="menu-border">
+        <nav class="menu__nav container">
+          <a class="menu__nav-link" href="#">Inicio</a>
+          <a class="menu__nav-link" href="#">Nosotros</a>
+          <a class="menu__nav-link" href="#">Servicios</a>
+          <a class="menu__nav-link" href="#">Productos</a>
+          <a class="menu__nav-link" href="#">Contacto</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./src/img/slide_01.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./src/img/slide_02.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./src/img/slide_03.jpg" />
+        </div>
+  
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="welcome container">
+      <h1 class="welcome__title">
+        bienvenida(o) a nuestro <span>sitio web</span>
+      </h1>
+      <p class="welcome__slogan">
+        Te sentiras como nueva(o) con nuestros masajistas profesionales
+      </p>
+    </section>
+
+    <section class="card container">
+      <div class="card__content">
+        <div class="card__item">
+          <img
+            class="card__image"
+            src="./src/img/servicio_01.jpg"
+            alt="About Us"
+          />
+          <div class="card__info">
+            <h2 class="card__info-title">conoce sobre <span>nosotros</span></h2>
+            <a class="card__info-button" href="#">Leer mas</a>
+          </div>
+        </div>
+        <!-- Card 1 -->
+
+        <div class="card__item">
+          <img
+            class="card__image"
+            src="./src/img/servicio_02.jpg"
+            alt="Service"
+          />
+          <div class="card__info">
+            <h2 class="card__info-title">nuestros <span>servicios</span></h2>
+            <a class="card__info-button" href="#">Leer mas</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+
+        <div class="card__item">
+          <img
+            class="card__image"
+            src="./src/img/servicio_03.jpg"
+            alt="Local Store"
+          />
+          <div class="card__info">
+            <h2 class="card__info-title">visita nuestra <span>tienda</span></h2>
+            <a class="card__info-button" href="#">Leer mas</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+      </div>
+    </section>
+
+    <section class="schedule">
+      <div class="schedule__content container">
+        <div class="schedule__info">
+          <h2 class="schedule__info-title">Horarios</h2>
+          <p class="schedule__info-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            optio, maxime, deleniti aperiam atque in praesentium suscipit autem
+            minus aliquam molestias eos, adipisci vero id enim doloribus ex rem
+            delectus.
+          </p>
+
+          <table class="schedule__table">
+            <thead class="schedule__table-head">
+              <tr>
+                <th class="schedule__table-title">dia</th>
+                <th class="schedule__table-title">de</th>
+                <th class="schedule__table-title">hasta</th>
+              </tr>
+            </thead>
+
+            <tbody class="schedule__table-body">
+              <tr class="schedule__table-allrow">
+                <td class="schedule__table-time">Lunes</td>
+                <td class="schedule__table-time">09:00</td>
+                <td class="schedule__table-time">19:00</td>
+              </tr>
+
+              <tr class="schedule__table-allrow">
+                <td class="schedule__table-time">Martes</td>
+                <td class="schedule__table-time">09:00</td>
+                <td class="schedule__table-time">19:00</td>
+              </tr>
+
+              <tr class="schedule__table-allrow">
+                <td class="schedule__table-time">Miercoles</td>
+                <td class="schedule__table-time">09:00</td>
+                <td class="schedule__table-time">19:00</td>
+              </tr>
+
+              <tr class="schedule__table-allrow">
+                <td class="schedule__table-time">Jueves</td>
+                <td class="schedule__table-time">09:00</td>
+                <td class="schedule__table-time">19:00</td>
+              </tr>
+
+              <tr class="schedule__table-allrow">
+                <td class="schedule__table-time">Viernes</td>
+                <td class="schedule__table-time">09:00</td>
+                <td class="schedule__table-time">19:00</td>
+              </tr>
+
+              <tr class="schedule__table-allrow">
+                <td class="schedule__table-time">Sabado</td>
+                <td class="schedule__table-time">09:00</td>
+                <td class="schedule__table-time">14:00</td>
+              </tr>
+
+              <tr class="schedule__table-allrow">
+                <td class="schedule__table-time">Domingo</td>
+                <td class="schedule__table-time" colspan="2">Cerrado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <main class="products container">
+      <h2 class="products__title">nuestros <span>productos</span></h2>
+
+      <div class="products__gallery">
+        <div class="products__item">
+          <div class="products__item-mask">
+            <img
+              class="products__item-photo"
+              src="./src/img/producto_01.jpg"
+              alt="Producto 1"
+            />
+          </div>
+
+          <h3 class="products__item-name">producto 1</h3>
+          <p class="products__item-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. atque,
+            eveniet neque
+          </p>
+          <p class="products__item-price">$25</p>
+        </div>
+        <!--Product 1-->
+
+        <div class="products__item">
+          <div class="products__item-mask">
+            <img
+              class="products__item-photo"
+              src="./src/img/producto_02.jpg"
+              alt="Producto 2"
+            />
+          </div>
+
+          <h3 class="products__item-name">producto 2</h3>
+          <p class="products__item-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. atque,
+            eveniet neque
+          </p>
+          <p class="products__item-price">$25</p>
+        </div>
+        <!--Product 2-->
+
+        <div class="products__item">
+          <div class="products__item-mask">
+            <img
+              class="products__item-photo"
+              src="./src/img/producto_03.jpg"
+              alt="Producto 2"
+            />
+          </div>
+          <h3 class="products__item-name">producto 3</h3>
+          <p class="products__item-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. atque,
+            eveniet neque
+          </p>
+          <p class="products__item-price">$25</p>
+        </div>
+        <!--Product 3-->
+
+        <div class="products__item">
+          <div class="products__item-mask">
+            <img
+              class="products__item-photo"
+              src="./src/img/producto_04.jpg"
+              alt="Producto 4"
+            />
+          </div>
+          <h3 class="products__item-name">producto 4</h3>
+          <p class="products__item-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. atque,
+            eveniet neque
+          </p>
+          <p class="products__item-price">$25</p>
+        </div>
+        <!--Product 4-->
+      </div>
+    </main>
+
+    <section class="appointment">
+      <div class="appointment__content container">
+        <h2 class="appointment__title">realiza una cita</h2>
+        <p class="appointment__info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+          assumenda blanditiis maiores ipsa earum inventore veritatis. Dolore,
+          aut esse alias labore modi unde reiciendis obcaecati libero
+          necessitatibus, numquam, voluptatum non.
+        </p>
+        <a class="appointment__button" href="#">Leer mas</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content container">
+        <div class="footer__section">
+          <h3 class="footer__title">nosotros</h3>
+          <p class="footer__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            cum, minus atque harum maxime reprehenderit fugiat sed corrupti
+            inventore tempora quisquam provident aut facere ipsum pariatur, esse
+            velit blanditiis quae!
+          </p>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">horario</h3>
+          <p class="footer__text">Lun-Vie: 9AM - 7PM</p>
+          <p class="footer__text">Sábado: 9AM - 2PM</p>
+          <p class="footer__text">Domingo: Cerrado</p>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">contacto</h3>
+          <p class="footer__text">Av. Revolución 1818</p>
+          <div class="footer__social">
+            <a class="footer__social-link" href="#"
+              ><img src="./src/img/icono_facebook.svg" alt="Facebook"
+            /></a>
+            <a class="footer__social-link" href="#"
+              ><img src="./src/img/icono_twitter.svg" alt="Twitter"
+            /></a>
+            <a class="footer__social-link" href="#"
+              ><img src="./src/img/icono_instagram.svg" alt="Instagram"
+            /></a>
+            <a class="footer__social-link" href="#"
+              ><img src="./src/img/icono_youtube.svg" alt="YouTube"
+            /></a>
+            <a class="footer__social-link" href="#"
+              ><img src="./src/img/icono_tiktok.svg" alt="TikTok"
+            /></a>
+            <a class="footer__social-link" href="#"
+              ><img src="./src/img/icono_pinterest.svg" alt="Pinterest"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__copyright">
+        carolina spa & salon. todos los derechos reservados
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  background-color: hsl(0, 0%, 97%);
+  text-align: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.header__block {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+@media (min-width: 768px) {
+  .header__block {
+    margin: 5rem auto 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.header__social {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.header__social-link {
+  width: 4rem;
+}
+
+.menu {
+  background-color: hsl(174, 44%, 69%);
+  padding: 0.3rem 0;
+  margin-bottom: 2rem;
+}
+.menu-border {
+  border-top: dashed 2px hsl(0, 0%, 100%);
+  border-bottom: dashed 2px hsl(0, 0%, 100%);
+}
+.menu__nav {
+  padding: 1.7rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .menu__nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.menu__nav-link {
+  font-size: 2.4rem;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-pagination-bullet {
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background-color: hsl(174, 44%, 69%);
+}
+
+.welcome {
+  margin: 8rem auto;
+}
+.welcome__title {
+  font-family: "Italianno", cursive;
+  color: hsl(336, 60%, 69%);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.8;
+  margin: 2rem 0;
+}
+.welcome__title span {
+  font-family: "Lato", sans-serif;
+  display: block;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 0%);
+}
+.welcome__slogan {
+  color: hsl(0, 0%, 59%);
+  font-size: 2.6rem;
+  line-height: 1.8;
+  margin: 4rem auto 0;
+  max-width: 50rem;
+}
+
+@media (min-width: 768px) {
+  .card__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.card__item {
+  margin: 0 auto 2rem;
+  max-width: 35rem;
+}
+@media (min-width: 768px) {
+  .card__item {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+.card__image {
+  border: 0.5rem solid hsl(0, 0%, 100%);
+  transition-duration: 0.3s;
+  width: 100%;
+}
+.card__image:hover {
+  transform: rotate(4deg) scale(1.3);
+}
+.card__info {
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  max-width: 90%;
+  transform: translateY(-5rem);
+}
+.card__info-title {
+  font-family: "Italianno", cursive;
+  color: hsl(336, 60%, 69%);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.8;
+  margin: 2rem 0;
+  padding: 2rem;
+  font-size: 3.4rem;
+}
+.card__info-title span {
+  font-family: "Lato", sans-serif;
+  display: block;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 0%);
+}
+.card__info-button {
+  background-color: hsl(336, 60%, 69%);
+  color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.3s background-color;
+}
+.card__info-button:hover {
+  background-color: hsl(336, 60%, 59%);
+}
+
+.schedule {
+  background-image: linear-gradient(180deg, hsl(174, 44%, 69%) 0, hsl(174, 44%, 69%) 50%, transparent 0), url(/src/img/bg_horarios.jpg);
+  background-position: 50%, bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .schedule {
+    background-image: linear-gradient(90deg, hsl(174, 44%, 69%) 0, hsl(174, 44%, 69%) 50%, transparent 0), url(/src/img/bg_horarios.jpg);
+    background-position: left;
+    background-size: cover;
+  }
+}
+@media (min-width: 1024px) {
+  .schedule {
+    background-size: cover;
+    background-position: top;
+  }
+}
+.schedule__content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  color: hsl(0, 0%, 100%);
+}
+@media (min-width: 768px) {
+  .schedule__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: unset;
+    gap: 5rem;
+  }
+}
+.schedule__info {
+  padding: 5rem 0;
+}
+.schedule__info-title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.schedule__info-text {
+  font-size: 2.2rem;
+}
+.schedule__table {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+  border: 0.5rem solid hsl(336, 60%, 69%);
+  border-collapse: collapse;
+}
+.schedule__table-head {
+  background-color: hsl(336, 60%, 69%);
+}
+.schedule__table-title {
+  padding: 2rem;
+  text-transform: capitalize;
+}
+.schedule__table-allrow:hover {
+  background-color: hsl(173, 44%, 59%);
+}
+.schedule__table-time {
+  padding: 1rem;
+  font-size: 2.2rem;
+}
+
+.products {
+  margin: 9rem auto;
+}
+.products__title {
+  font-family: "Italianno", cursive;
+  color: hsl(336, 60%, 69%);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.8;
+  margin: 2rem 0;
+}
+.products__title span {
+  font-family: "Lato", sans-serif;
+  display: block;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 0%);
+}
+.products__gallery {
+  padding-top: 3rem;
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .products__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .products__gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.products__item {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.products__item-mask {
+  overflow: hidden;
+}
+.products__item-photo {
+  width: 100%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+.products__item-photo:hover {
+  transform: scale(1.2);
+}
+.products__item-name {
+  color: hsl(336, 60%, 69%);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.products__item-text {
+  text-transform: uppercase;
+  text-align: start;
+  padding: 0 2rem;
+}
+.products__item-price {
+  color: hsl(0, 0%, 59%);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.appointment {
+  background-image: url(/src/img/bg_citas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.appointment__content {
+  padding: 7rem 0 4rem;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.appointment__title {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.appointment__info {
+  font-size: 2rem;
+  margin: 0 auto;
+  max-width: 60rem;
+  line-height: 2;
+}
+.appointment__button {
+  background-color: hsl(174, 44%, 69%);
+  color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.3s background-color;
+  padding: 2rem 10rem;
+}
+.appointment__button:hover {
+  background-color: hsl(173, 44%, 59%);
+}
+
+.footer__content {
+  margin: 7rem auto 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+}
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__title {
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+.footer__text {
+  font-size: 2rem;
+}
+.footer__social {
+  display: flex;
+  margin-bottom: 2rem;
+  margin: 3rem 0;
+}
+.footer__social-link {
+  width: 4rem;
+}
+@media (min-width: 768px) {
+  .footer__social {
+    margin: 0;
+  }
+}
+.footer__copyright {
+  border-top: 1px solid hsl(0, 0%, 87%);
+  color: hsl(0, 0%, 59%);
+  text-transform: capitalize;
+  padding: 1rem 0;
+  max-width: 120rem;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
