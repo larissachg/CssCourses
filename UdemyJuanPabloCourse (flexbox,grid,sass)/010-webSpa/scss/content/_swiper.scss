@@ -1,0 +1,22 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.swiper {
+  &-slide {
+    background-position: center;
+    background-size: cover;
+
+    & img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &-pagination-bullet {
+    background-color: $white;
+    opacity: 0.5;
+  }
+
+  &-pagination-bullet-active {
+    background-color: $aqua}
+}

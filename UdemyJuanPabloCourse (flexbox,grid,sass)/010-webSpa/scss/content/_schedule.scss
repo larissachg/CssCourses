@@ -1,0 +1,77 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.schedule {
+  background-image: linear-gradient(180deg, $aqua 0, $aqua 50%, transparent 0),
+    url(/src/img/bg_horarios.jpg);
+  background-position: 50%, bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  @include m.tablet {
+    background-image: linear-gradient(90deg, $aqua 0, $aqua 50%, transparent 0),
+      url(/src/img/bg_horarios.jpg);
+    background-position: left;
+    background-size: cover;
+  }
+
+  @include m.desktop {
+    background-size: cover;
+    background-position: top;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    color: $white;
+
+    @include m.tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: unset;
+      gap: 5rem;
+    }
+  }
+
+  &__info {
+    padding: 5rem 0;
+
+    &-title {
+      text-transform: uppercase;
+      font-size: 4rem;
+      font-weight: 400;
+      margin: 2rem 0;
+    }
+
+    &-text {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__table {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    border: 0.5rem solid $pink;
+    border-collapse: collapse;
+
+    &-head {
+      background-color: $pink;
+    }
+
+    &-title {
+      padding: 2rem;
+      text-transform: capitalize;
+    }
+
+    &-allrow{
+      &:hover{
+        @include m.buttonHover($aquaHover);
+      }
+    }
+
+    &-time {
+      padding: 1rem;
+      font-size: 2.2rem;
+    }
+  }
+}

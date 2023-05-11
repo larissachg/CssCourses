@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.appointment{
+    background-image: url(/src/img/bg_citas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &__content{
+        padding: 7rem 0 4rem;
+        color: $white;
+        @include m.flexCol();
+        gap: 2rem;
+    }
+    &__title{
+        text-transform: uppercase;
+        font-size: 6rem;
+        font-weight: 400;
+        margin: 1rem 0;
+    }
+
+    &__info{
+        font-size: 2rem;
+        margin: 0 auto;
+        max-width: 60rem;
+        line-height: 2;
+    }
+
+    &__button{
+        @include m.button($aqua,$white);
+        padding: 2rem 10rem;
+        
+        &:hover{
+            @include m.buttonHover($aquaHover);
+        }
+    }
+}
