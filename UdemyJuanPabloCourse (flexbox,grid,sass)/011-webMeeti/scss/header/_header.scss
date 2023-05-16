@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  @include m.flexCol();
+  padding: 2rem 0;
+
+  @include m.tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

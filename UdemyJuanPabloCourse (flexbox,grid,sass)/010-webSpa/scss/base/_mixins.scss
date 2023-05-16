@@ -57,8 +57,13 @@
 @mixin socialmedia {
   display: flex;
   margin-bottom: 2rem;
+  transition: .5s;
 
   &-link {
     width: 4rem;
+  }
+
+  :hover{
+    transform: translateY(-10px)
   }
 }

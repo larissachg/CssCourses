@@ -1,0 +1,56 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.meeti{
+    &__content{
+        margin: 5rem auto;
+        display: grid;
+
+        @include m.tablet{
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+        }
+    }
+
+    &__text{
+
+        text-align: left;
+        @include m.tablet{
+            grid-column: 1/3;
+        }
+
+        &-info{
+            margin: 1.5rem 0;
+            @include m.flexCol();
+            gap: 1rem;
+        }
+    }
+
+    &__map{
+        grid-column: 1/3;
+
+        &-img{
+            width: 100%;
+        }
+        &-info{
+            background-color: $turquesa;
+            color: $white;
+            padding: 4rem 0;
+            @include m.flexCol();
+            gap: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        &-title{
+            font-size: 3.3rem;
+        }
+
+        &-text{
+            font-weight: 700;
+
+            & span{
+                font-weight: 400;
+            }
+        }
+    }
+}

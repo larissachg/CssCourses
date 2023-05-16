@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.nav {
+  @include m.flexCol();
+  gap: 2rem;
+
+  @include m.tablet {
+    flex-direction: row;
+  }
+
+  &__link {
+    color: $black;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+
+    @include m.tablet{
+      font-size: 1.45rem;
+    }
+
+    &--color {
+      color: $pink;
+      font-weight: 700;
+
+      @include m.tablet{
+        &::after{
+            content: '';
+            height: 4rem;
+            border-right: 2px solid $iceColor;
+            display: inline-block;
+            margin-left: 2rem;
+        }
+      }
+    }
+  }
+}

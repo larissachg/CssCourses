@@ -1,0 +1,63 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.events {
+  margin: 5rem auto;
+
+  &__event {
+    margin-top: 2rem;
+    text-align: left;
+
+    @include m.tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  &__card {
+    border: 1px solid $iceColor;
+    margin-bottom: 2rem;
+
+    &-photo {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    padding: 2rem;
+    @include m.flexCol();
+    gap: 2rem;
+    align-items: start;
+    text-transform: capitalize;
+
+    &-date {
+      font-size: 1.4rem;
+    }
+    &-title {
+      font-size: 3rem;
+    }
+  }
+
+  &__manager {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+
+    &-photo {
+      max-width: 10rem;
+      border-radius: 50%;
+    }
+
+    &-presentation {
+      font-weight: 700;
+    }
+
+    &-name {
+      @include m.tablet {
+        line-height: 1.5;
+      }
+    }
+  }
+}

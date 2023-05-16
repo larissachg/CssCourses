@@ -1,0 +1,29 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.categories {
+  background-color: $iceColor;
+  padding: 5rem 0;
+
+  &__gallery {
+    margin-top: 5rem;
+    display: grid;
+    gap: 4rem;
+
+    @include m.tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    @include m.desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__area {
+    &-name {
+      margin: 2.4rem 0;
+      font-size: 2.4rem;
+    }
+  }
+}
