@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+//FONT
+$fontPrincipal: 'Raleway', sans-serif;
+$fontSecundary: 'Staatliches', cursive;
+
+//RESPONSIVE DESIGN
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+//COLORS
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$iceColor: hsl(0, 0%, 95%);
+$border: hsl(288, 4%, 77%);
+$pink: hsl(335, 57%, 46%);
+$pinkHover: hsl(335, 57%, 36%);
+$orange: hsl(27, 100%, 54%);
+$orangeHover: hsl(27, 100%, 44%);
+$turquesa: hsl(186, 93%, 32%);
+$titleColor: hsl(290, 4%, 27%);

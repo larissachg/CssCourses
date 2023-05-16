@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  line-height: 1.8;
+}
+
+h1,
+h2 {
+  font-family: "Staatliches", cursive;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 4.4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4rem;
+  color: hsl(290, 4%, 27%);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+  }
+}
+.nav__link {
+  color: hsl(0, 0%, 0%);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .nav__link {
+    font-size: 1.45rem;
+  }
+}
+.nav__link--color {
+  color: hsl(335, 57%, 46%);
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .nav__link--color::after {
+    content: "";
+    height: 4rem;
+    border-right: 2px solid hsl(0, 0%, 95%);
+    display: inline-block;
+    margin-left: 2rem;
+  }
+}
+
+.hero {
+  background-image: url(/src/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero__content {
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.hero__title {
+  color: hsl(0, 0%, 100%);
+  max-width: 60rem;
+}
+.hero__button {
+  background-color: hsl(27, 100%, 54%);
+  padding: 1.5rem 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+.hero__button:hover {
+  background-color: hsl(27, 100%, 44%);
+}
+
+.findGroup {
+  background-color: hsl(0, 0%, 95%);
+  padding: 5rem 0;
+}
+.findGroup__form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: start;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .findGroup__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+}
+.findGroup__input {
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: 1px solid hsl(288, 4%, 77%);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .findGroup__input {
+    padding: 1.7rem 1rem;
+  }
+}
+.findGroup__button {
+  background-color: hsl(335, 57%, 46%);
+  padding: 1.5rem 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  width: 100%;
+}
+.findGroup__button:hover {
+  background-color: hsl(335, 57%, 36%);
+}
+
+.events {
+  margin: 5rem auto;
+}
+.events__event {
+  margin-top: 2rem;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .events__event {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.events__card {
+  border: 1px solid hsl(0, 0%, 95%);
+  margin-bottom: 2rem;
+}
+.events__card-photo {
+  width: 100%;
+}
+.events__info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  align-items: start;
+  text-transform: capitalize;
+}
+.events__info-date {
+  font-size: 1.4rem;
+}
+.events__info-title {
+  font-size: 3rem;
+}
+.events__manager {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  align-items: center;
+}
+.events__manager-photo {
+  max-width: 10rem;
+  border-radius: 50%;
+}
+.events__manager-presentation {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .events__manager-name {
+    line-height: 1.5;
+  }
+}
+
+.categories {
+  background-color: hsl(0, 0%, 95%);
+  padding: 5rem 0;
+}
+.categories__gallery {
+  margin-top: 5rem;
+  display: grid;
+  gap: 4rem;
+}
+@media (min-width: 768px) {
+  .categories__gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .categories__gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.categories__area-name {
+  margin: 2.4rem 0;
+  font-size: 2.4rem;
+}
+
+.group {
+  background-image: linear-gradient(hsl(335, 57%, 46%) 50%, hsl(186, 93%, 32%) 50%);
+}
+@media (min-width: 768px) {
+  .group {
+    background-image: linear-gradient(to right, hsl(335, 57%, 46%) 50%, hsl(186, 93%, 32%) 50%);
+  }
+}
+.group__content {
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+  display: grid;
+  gap: 5rem;
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .group__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.group__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: start;
+  gap: 3rem;
+  margin: 2rem 0 2.4rem;
+}
+.group__title {
+  font-size: 3rem;
+}
+.group__info {
+  font-size: 2.4rem;
+}
+
+.footer {
+  margin-top: 5rem;
+}
+.footer__copyright {
+  margin: 3rem 0;
+}
+
+.meeti__content {
+  margin: 5rem auto;
+  display: grid;
+}
+@media (min-width: 768px) {
+  .meeti__content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.meeti__text {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .meeti__text {
+    grid-column: 1/3;
+  }
+}
+.meeti__text-info {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.meeti__map {
+  grid-column: 1/3;
+}
+.meeti__map-img {
+  width: 100%;
+}
+.meeti__map-info {
+  background-color: hsl(186, 93%, 32%);
+  color: hsl(0, 0%, 100%);
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-transform: capitalize;
+}
+.meeti__map-title {
+  font-size: 3.3rem;
+}
+.meeti__map-text {
+  font-weight: 700;
+}
+.meeti__map-text span {
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.hero {
+  background-image: url(/src/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    min-height: 60rem;
+    @include m.flexCol();
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__title {
+    color: $white;
+    max-width: 60rem;
+  }
+
+  &__button {
+    @include m.button($orange, $orangeHover);
+  }
+}

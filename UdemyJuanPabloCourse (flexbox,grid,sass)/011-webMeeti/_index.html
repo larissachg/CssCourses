@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Meeti Lara</title>
+  </head>
+  <body>
+    <header class="header container">
+      <a href="#"><img src="./src/img/logo.png" alt="Logo" /></a>
+      <nav class="nav">
+        <a href="#" class="nav__link nav__link--color">crear grupo</a>
+        <a href="#" class="nav__link">iniciar sesion</a>
+        <a href="#" class="nav__link">registrarse</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero__content container">
+        <h1 class="hero__title">
+          encuentra o crea un grupo para compartir lo que mas te gusta
+        </h1>
+        <a href="#" class="hero__button">Obtener una cuenta</a>
+      </div>
+    </section>
+
+    <section class="findGroup">
+      <div class="findGroup__content container">
+        <h2 class="findGroup__title">busca un grupo en tu ciudad</h2>
+        <form class="findGroup__form">
+          <select class="findGroup__input" name="area">
+            <option value="programacion">programacion</option>
+            <option value="diseño">diseño</option>
+            <option value="negocios">negocios</option>
+            <option value="moda">moda</option>
+            <option value="ejercicio y salud">ejercicio y salud</option>
+            <option value="fotografia">fotografia</option>
+            <option value="comida">comida</option>
+            <option value="diseño interior">diseño interior</option>
+            <option value="cafe">cafe</option>
+            <option value="cine">cine</option>
+            <option value="libros">libros</option>
+            <option value="emprendimiento">emprendimiento</option>
+          </select>
+
+          <input
+            class="findGroup__input"
+            type="text"
+            placeholder="nombre evento"
+          />
+          <input
+            class="findGroup__input"
+            type="text"
+            placeholder="ciudad o pais"
+          />
+          <button class="findGroup__button">Buscar</button>
+        </form>
+      </div>
+    </section>
+
+    <main class="events container">
+      <h2 class="events__title">proximos eventos</h2>
+
+      <div class="events__event">
+        <div class="events__card">
+          <a href="/meeti.html">
+            <img
+              class="events__card-photo"
+              src="./src/img/imagen1.jpg"
+              alt="Business Ideas Event"
+            />
+          </a>
+  
+            <div class="events__info">
+              <small class="events__info-date"
+                >Jueves 30 de septiembre de 2022</small
+              >
+              <h3 class="events__info-title">ideas de negocio</h3>
+  
+              <div class="events__manager">
+                <img
+                  class="events__manager-photo"
+                  src="./src/img/perfil1.jpg"
+                  alt="Manager"
+                />
+                <div class="events__manager-info">
+                  <p class="events__manager-presentation">Organizado por:</p>
+                  <p class="events__manager-name">
+                    Juan Pablo de la torre Valdez
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 1-->
+
+        <div class="events__card">
+          <a href="/meeti.html">
+            <img
+              class="events__card-photo"
+              src="./src/img/imagen2.jpg"
+              alt="Business Ideas Event"
+              />
+            </a>
+  
+            <div class="events__info">
+              <small class="events__info-date">lunes 02 de octubre de 2022</small>
+              <h3 class="events__info-title">bitcoin y otras criptos</h3>
+  
+              <div class="events__manager">
+                <img
+                  class="events__manager-photo"
+                  src="./src/img/perfil1.jpg"
+                  alt="Manager"
+                />
+                <div class="events__manager-info">
+                  <p class="events__manager-presentation">Organizado por:</p>
+                  <p class="events__manager-name">
+                    Juan Pablo de la torre Valdez
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 2-->
+
+        <div class="events__card">
+          <a href="/meeti.html">
+            <img
+              class="events__card-photo"
+              src="./src/img/imagen3.jpg"
+              alt="Business Ideas Event"
+            />
+          </a>
+
+            <div class="events__info">
+              <small class="events__info-date"
+                >miercoles 04 de octubre de 2022</small
+              >
+              <h3 class="events__info-title">pizza paso a paso</h3>
+  
+              <div class="events__manager">
+                <img
+                  class="events__manager-photo"
+                  src="./src/img/perfil2.jpg"
+                  alt="Manager"
+                />
+                <div class="events__manager-info">
+                  <p class="events__manager-presentation">Organizado por:</p>
+                  <p class="events__manager-name">Josue Perez</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 3-->
+      </div>
+    </main>
+
+    <section class="categories">
+      <div class="categories__content container">
+        <h2 class="categories__title">categorias</h2>
+
+        <div class="categories__gallery">
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_1.jpg"
+              alt="Programacion"
+            />
+            <h3 class="categories__area-name">Programacion</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_2.jpg"
+              alt="diseño UX y UI"
+            />
+            <h3 class="categories__area-name">Diseño UX y UI</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_3.jpg"
+              alt="Negocios e Ideas"
+            />
+            <h3 class="categories__area-name">Negocios e Ideas</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_4.jpg"
+              alt="Ropa y Moda"
+            />
+            <h3 class="categories__area-name">Ropa y Moda</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_5.jpg"
+              alt="Ejercicio y Bienestar"
+            />
+            <h3 class="categories__area-name">Ejercicio y Bienestar</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_6.jpg"
+              alt="Fotografía"
+            />
+            <h3 class="categories__area-name">Fotografía</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_7.jpg"
+              alt="Comida"
+            />
+            <h3 class="categories__area-name">Comida</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_8.jpg"
+              alt="Diseño Interior"
+            />
+            <h3 class="categories__area-name">Diseño Interior</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_9.jpg"
+              alt="Café"
+            />
+            <h3 class="categories__area-name">Café</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_10.jpg"
+              alt="Cine"
+            />
+            <h3 class="categories__area-name">Cine</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_11.jpg"
+              alt="Libros"
+            />
+            <h3 class="categories__area-name">Libros</h3>
+          </div>
+
+          <div class="categories__area">
+            <img
+              class="categories__area-photo"
+              src="/src/img/categoria_12.jpg"
+              alt="Emprendimiento"
+            />
+            <h3 class="categories__area-name">Emprendimiento</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="group">
+      <div class="group__content container">
+        <div class="group__option">
+          <h3 class="group__title">Crea un Grupo</h3>
+          <p class="group__info">
+            Comparte lo que te gusta o tu pasión con los demás, crea tu propio
+            grupo y eventos; hoy mismo sin costos
+          </p>
+        </div>
+
+        <div class="group__option">
+          <h3 class="group__title">Unete un Grupo</h3>
+          <p class="group__info">
+            Conoce personas con tus mismos gustos y pasiones, únete a un grupo
+            ya existente y asiste a próximos eventos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <nav class="nav">
+        <a href="#" class="nav__link nav__link--color">crear grupo</a>
+        <a href="#" class="nav__link">iniciar sesion</a>
+        <a href="#" class="nav__link">registrarse</a>
+      </nav>
+
+      <p class="footer__copyright">Todos los derechos reservados. Meeti</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.findGroup {
+  background-color: $iceColor;
+  padding: 5rem 0;
+
+  &__form {
+    margin-top: 2rem;
+    @include m.flexCol();
+    align-items: start;
+    gap: 2rem;
+
+    @include m.tablet {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+    }
+  }
+
+  &__input {
+    font-family: $fontPrincipal;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: 1px solid $border;
+    width: 100%;
+
+    @include m.tablet {
+      padding: 1.7rem 1rem;
+    }
+  }
+
+  &__button {
+    @include m.button($pink, $pinkHover);
+    color: $white;
+    border: none;
+    width: 100%;
+  }
+}
