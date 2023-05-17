@@ -1,0 +1,22 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.footer {
+  border-bottom: 0.5rem solid $coral;
+
+  &__content {
+    padding: 3rem 0;
+    @include m.tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__copyright {
+    margin-top: 3rem;
+    font-size: 2.4rem;
+    @include m.tablet {
+      margin: 0;
+    }
+  }
+}
