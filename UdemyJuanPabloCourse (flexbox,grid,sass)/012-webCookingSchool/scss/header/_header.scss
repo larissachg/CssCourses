@@ -1,0 +1,17 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  margin: 5rem auto;
+  @include m.flexCol();
+  gap: 3rem;
+
+  @include m.tablet{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 30rem;
+  }
+}

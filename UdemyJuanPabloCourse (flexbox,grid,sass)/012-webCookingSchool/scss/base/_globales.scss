@@ -1,0 +1,64 @@
+@use "variables" as *;
+@use "../base/mixins" as m;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fontPrincipal;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h2{
+  font-size: 3.4rem;
+  font-weight: 400;
+}
+
+h3{
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.heading{
+  @include m.flexCol();
+  gap: 2rem;
+  margin: 2rem auto 3rem;
+}

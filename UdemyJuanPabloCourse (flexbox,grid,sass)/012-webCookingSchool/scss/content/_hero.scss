@@ -1,0 +1,51 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.hero {
+  &__parts {
+    color: $white;
+    @include m.grid(4, 1);
+
+    @include m.tablet {
+      @include m.grid(2, 2);
+    }
+  }
+
+  &__part {
+    background-color: $coral;
+    height: 40rem;
+    @include m.flexCol();
+    justify-content: center;
+
+    &--gold {
+      background-color: $gold;
+    }
+  }
+
+  &__infoBlock {
+    max-width: 40rem;
+    border-block: 1px solid $white;
+    padding: 3rem 0;
+
+    &-title {
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    &-text {
+      font-size: 2rem;
+    }
+  }
+
+  &__image {
+    @include m.bgImage(url(/src/img/bloque_1.jpg));
+
+    &--bread {
+      @include m.bgImage(url(/src/img/bloque_2.jpg));
+
+      @include m.tablet {
+        grid-row: 2/3;
+      }
+    }
+  }
+}
