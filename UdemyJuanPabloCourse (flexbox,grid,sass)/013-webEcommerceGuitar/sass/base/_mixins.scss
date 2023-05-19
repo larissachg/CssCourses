@@ -1,0 +1,43 @@
+@use "../base/variables" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin flexCol() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin button($textColor) {
+  color: $textColor;
+  border: 2px solid $orange;
+  padding: 1rem 5rem;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+}
+
+@mixin price{
+  font-size: 6rem;
+    font-weight: 900;
+    color: $orange;
+}

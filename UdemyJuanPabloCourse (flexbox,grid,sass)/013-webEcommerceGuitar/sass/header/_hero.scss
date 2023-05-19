@@ -1,0 +1,40 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.hero {
+  @include m.flexCol();
+  gap: 2rem;
+
+  @include m.tablet {
+    align-items: start;
+    text-align: left;
+    max-width: 49%;
+  }
+
+  &__title {
+    font-size: 8rem;
+    margin: 2.3rem auto 2.5rem;
+
+    @include m.tablet {
+      margin: 2.3rem 0 2.5rem;
+    }
+  }
+
+  &__info {
+    font-size: 2rem;
+  }
+
+  &__price {
+    @include m.price();
+  }
+
+  &__button {
+    @include m.button($white);
+    width: max-content;
+    align-self: center;
+
+    @include m.tablet {
+      align-self: start;
+    }
+  }
+}

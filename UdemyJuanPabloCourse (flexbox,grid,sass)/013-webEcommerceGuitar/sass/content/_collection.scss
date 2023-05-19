@@ -1,0 +1,19 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.collection {
+  margin: 5rem auto 8rem;
+  
+  &__guitars {
+    display: grid;
+    gap: 4rem;
+
+    @include m.tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
