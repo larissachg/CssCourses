@@ -1,0 +1,77 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.header {
+  background-image: linear-gradient(to right, $blackGradient, $blackGradient),
+    url(/src/img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    padding: 5rem 0 4rem;
+    color: $white;
+    @include m.flexCol();
+    gap: 5rem;
+  }
+
+  &__barra {
+    @include m.flexCol();
+    align-items: center;
+    gap: 6rem;
+
+    @include m.tablet{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-logo {
+      width: 30rem;
+    }
+
+    &-nav {
+      display: flex;
+      gap: 2rem;
+      z-index: 1;
+    }
+
+    &-link {
+      color: $white;
+      padding: 0.5rem;
+      transition-property: background-color;
+      transition-duration: 0.3s;
+
+      &:hover {
+        background-color: $orange;
+      }
+    }
+  }
+
+  &__guitar{
+    display: none;
+    
+    @include m.desktop{
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -2rem;
+      animation: showGuitar 1s ease-in-out 0s 1;
+    }
+  }
+
+  @keyframes showGuitar {
+    0%{
+      opacity: 0;
+      transform: translateX(80rem) rotate(-90deg);
+    }
+
+    50%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

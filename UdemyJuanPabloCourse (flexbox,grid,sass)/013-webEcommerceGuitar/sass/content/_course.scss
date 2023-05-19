@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.course{
+    padding: 10rem 0;
+    background-image: linear-gradient(to right, $blackGradient, $blackGradient),
+    url(/src/img/cursos_bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.desktop{
+        grid-template-columns: 2fr 3fr 2fr;
+    }
+
+    &__content{
+        color: $white;
+        grid-column: 3/4;
+
+        @include m.desktop{
+            grid-column: 2/3
+        }
+    }
+
+    &__info{
+        font-size: 2.4rem;
+    }
+
+    &__button{
+        @include m.button($white);
+        width: max-content;
+        margin: 4rem auto;
+    }
+}

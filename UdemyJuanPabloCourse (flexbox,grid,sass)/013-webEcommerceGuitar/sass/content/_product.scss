@@ -1,0 +1,60 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.product {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+
+  &__content {
+    text-align: left;
+  }
+
+  &__info {
+    @include m.flexCol();
+    gap: 2rem;
+
+    &-name {
+      text-transform: uppercase;
+    }
+
+    &-price {
+      @include m.price();
+    }
+  }
+
+  &__form {
+    &-label {
+      font-size: 2.2rem;
+    }
+
+    &-select {
+      display: block;
+      width: 100%;
+      border: 2px solid $orange;
+      text-align: center;
+      padding: 1rem;
+      font-family: $fontPrincipal;
+      font-size: 2rem;
+    }
+  }
+
+  &__button {
+    margin: 3rem 0;
+    padding: 2rem;
+    text-transform: uppercase;
+    background-color: $orange;
+    color: $white;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border: none;
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+
+    &:hover {
+      background-color: $black;
+      cursor: pointer;
+    }
+  }
+}

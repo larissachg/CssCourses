@@ -1,0 +1,43 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.footer{
+    background-color: $brown;
+
+    &__content{
+        color: $white;
+        font-weight: 700;
+        padding: 5rem 0;
+
+        @include m.tablet{
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+    }
+
+    &__nav{
+        @include m.flexCol();
+        gap: 1rem;
+
+        @include m.tablet{
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        &-link{
+            color: $white;
+            text-transform: capitalize;
+            font-size: 2.8rem;
+
+            &:hover{
+                color: $orange;
+            }
+        }
+    }
+
+    &__copyright{
+        margin: 2.8rem 0;
+        font-size: 2.8rem;
+    }
+}

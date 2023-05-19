@@ -1,0 +1,29 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as m;
+
+.guitar {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  gap: 1rem;
+
+  &__info {
+    @include m.flexCol();
+    gap: 2rem;
+    text-align: left;
+
+    &-name {
+      text-transform: uppercase;
+    }
+
+    &-price {
+      @include m.price();
+    }
+
+    &-button {
+      @include m.button($black);
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
+  }
+}
