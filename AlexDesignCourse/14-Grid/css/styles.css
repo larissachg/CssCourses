@@ -56,7 +56,7 @@ body{
 
 .item1{
     background-color: slateblue;
-    background-image: url(/14-Grid/img/image1.jpg);
+    background-image: url(../img/image1.jpg);
     /* grid-column: linea-inicial / linea-final; */
     /* grid-column: 1/4;
     grid-row: 1/3; */
@@ -65,7 +65,7 @@ body{
 
 .item2{
     background-color: deeppink;
-    background-image: url(/14-Grid/img/image2.jpg);
+    background-image: url(../img/image2.jpg);
     /* grid-column: 4/6;
     grid-row: 1/5; */
     /* grid-area: element2; */
@@ -73,7 +73,7 @@ body{
 
 .item3{
     background-color: green;
-    background-image: url(/14-Grid/img/image3.jpg);
+    background-image: url(../img/image3.jpg);
     /* grid-column: 1/4;
     grid-row: 3/5; */
     /* grid-area: element3; */
@@ -81,16 +81,16 @@ body{
 
 .item4{
     background-color: brown;
-    background-image: url(/14-Grid/img/image4.jpg);
+    background-image: url(../img/image4.jpg);
     /* grid-area: element4; */
 }
 
 .item5{
     background-color: steelblue;
-    background-image: url(/14-Grid/img/image5.jpg);
+    background-image: url(../img/image5.jpg);
 }
 
 .item6{
     background-color: coral;
-    background-image: url(/14-Grid/img/image6.jpg);
+    background-image: url(../img/image6.jpg);
 }
