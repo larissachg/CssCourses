@@ -24,7 +24,7 @@ body{
 }
     
 .card__person{
-    background-image: url(/8-Card/woman.jpg);
+    background-image: url(../woman.jpg);
     width: 110px;
     height: 110px;
     background-size: cover;
@@ -58,12 +58,12 @@ body{
 }
 
 .card__icon--facebook{
-    background-image: url(/8-Card/icons/facebook.svg);
+    background-image: url(../icons/facebook.svg);
 }
 
 .card__icon--instagram{
-    background-image: url(/8-Card/icons/instagram.svg);
+    background-image: url(../icons/instagram.svg);
 }
 .card__icon--youtube{
-    background-image: url(/8-Card/icons/youtube.svg);
+    background-image: url(../icons/youtube.svg);
 }
