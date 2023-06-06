@@ -50,7 +50,7 @@ p {
 }
 
 .header {
-  background-image: url(/src/img/header.jpg);
+  background-image: url(../img/header.jpg);
   background-position: 50%;
   background-size: cover;
   padding: 3rem 0 20rem;
@@ -231,7 +231,7 @@ p {
 .host {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  background-image: linear-gradient(to bottom, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 0%) 50%, transparent 50%), url(/src/img/anfitrion.jpg);
+  background-image: linear-gradient(to bottom, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 0%) 50%, transparent 50%), url(../img/anfitrion.jpg);
   background-size: 100%, 70rem;
   background-repeat: no-repeat;
   background-position: center, center 200%;
@@ -241,7 +241,7 @@ p {
 @media (min-width: 768px) {
   .host {
     grid-template-rows: unset;
-    background-image: linear-gradient(to right, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 0%) 45%, transparent 55%), url(/src/img/anfitrion.jpg);
+    background-image: linear-gradient(to right, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 0%) 45%, transparent 55%), url(../img/anfitrion.jpg);
     background-size: 100%, auto;
     background-position: center, 50% 30%;
     padding: 13rem 5rem;

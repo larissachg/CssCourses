@@ -110,7 +110,7 @@ img{
 }
 
 .hero__img{
-    background-image: url(/images/principal.jpg);
+    background-image: url(../images/principal.jpg);
     height: 25rem;
     background-repeat: no-repeat;
     background-size: cover;

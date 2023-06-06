@@ -68,7 +68,7 @@
 }
 
 @mixin quote{
-    background-image: url(/src/img/quote.svg);
+    background-image: url(../src/img/quote.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     content: "";

@@ -38,10 +38,10 @@
   }
 
   &__image {
-    @include m.bgImage(url(/src/img/bloque_1.jpg));
+    @include m.bgImage(url(../src/img/bloque_1.jpg));
 
     &--bread {
-      @include m.bgImage(url(/src/img/bloque_2.jpg));
+      @include m.bgImage(url(../src/img/bloque_2.jpg));
 
       @include m.tablet {
         grid-row: 2/3;

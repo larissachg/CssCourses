@@ -2,7 +2,7 @@
 @use "../base/mixins" as m;
 
 .hero {
-  background-image: url(/src/img/hero.jpg);
+  background-image: url(../src/img/hero.jpg);
   background-size: cover;
   background-position: center;
 

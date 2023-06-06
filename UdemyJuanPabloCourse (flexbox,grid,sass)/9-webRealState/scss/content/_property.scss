@@ -11,7 +11,7 @@
     }
 
     &__photo{
-        background-image: url(/src/img/destacada.jpg);
+        background-image: url(../src/img/destacada.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         @include m.tablet{
