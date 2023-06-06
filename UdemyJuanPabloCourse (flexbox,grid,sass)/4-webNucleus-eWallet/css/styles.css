@@ -21,7 +21,7 @@ img{
 
 /* HEADER */
 header{
-    background-image: url(/img/header_bg.svg);
+    background-image: url(../img/header_bg.svg);
     background-size: 50rem;
     background-repeat: no-repeat;
     background-position: right;

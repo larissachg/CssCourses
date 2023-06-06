@@ -52,7 +52,7 @@ p {
 }
 
 .header {
-  background-image: linear-gradient(to right, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(/src/img/header.jpg);
+  background-image: linear-gradient(to right, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(../src/img/header.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -223,7 +223,7 @@ p {
 
 .course {
   padding: 10rem 0;
-  background-image: linear-gradient(to right, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(/src/img/cursos_bg.jpg);
+  background-image: linear-gradient(to right, hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)), url(../src/img/cursos_bg.jpg);
   background-size: cover;
   background-position: center;
 }

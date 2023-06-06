@@ -63,7 +63,7 @@ ul {
 
 .header {
   color: white;
-  background-image: linear-gradient(90deg, hsla(220, 25%, 31%, 0.9) 0, hsla(220, 25%, 31%, 0.9)), url(/src/img/header_bg.jpg);
+  background-image: linear-gradient(90deg, hsla(220, 25%, 31%, 0.9) 0, hsla(220, 25%, 31%, 0.9)), url(../src/img/header_bg.jpg);
   background-position: 50%;
   background-size: cover;
   padding: 3rem 0;
@@ -183,22 +183,22 @@ ul {
   background-color: white;
 }
 .state__house:nth-child(1) .state__photo {
-  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("/src/img/propiedad_1.jpg");
+  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("../src/img/propiedad_1.jpg");
 }
 .state__house:nth-child(2) .state__photo {
-  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("/src/img/propiedad_2.jpg");
+  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("../src/img/propiedad_2.jpg");
 }
 .state__house:nth-child(3) .state__photo {
-  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("/src/img/propiedad_3.jpg");
+  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("../src/img/propiedad_3.jpg");
 }
 .state__house:nth-child(4) .state__photo {
-  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("/src/img/propiedad_4.jpg");
+  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("../src/img/propiedad_4.jpg");
 }
 .state__house:nth-child(5) .state__photo {
-  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("/src/img/propiedad_5.jpg");
+  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("../src/img/propiedad_5.jpg");
 }
 .state__house:nth-child(6) .state__photo {
-  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("/src/img/propiedad_6.jpg");
+  background-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.7)), url("../src/img/propiedad_6.jpg");
 }
 .state__photo {
   aspect-ratio: 5/3;
@@ -261,7 +261,7 @@ ul {
   }
 }
 .property__photo {
-  background-image: url(/src/img/destacada.jpg);
+  background-image: url(../src/img/destacada.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -389,7 +389,7 @@ ul {
   margin: 3rem 0 2rem;
 }
 .blog__opinion-text:before {
-  background-image: url(/src/img/quote.svg);
+  background-image: url(../src/img/quote.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   content: "";

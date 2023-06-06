@@ -133,12 +133,12 @@ p {
   font-size: 2rem;
 }
 .hero__image {
-  background-image: url(/src/img/bloque_1.jpg);
+  background-image: url(../src/img/bloque_1.jpg);
   background-size: cover;
   background-position: center;
 }
 .hero__image--bread {
-  background-image: url(/src/img/bloque_2.jpg);
+  background-image: url(../src/img/bloque_2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -255,7 +255,7 @@ p {
 }
 
 .chef {
-  background-image: url(/src/img/chef_bg.jpg);
+  background-image: url(../src/img/chef_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

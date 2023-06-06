@@ -30,7 +30,7 @@
   }
   
   @for $i from 1 through 6 {
-    $imagen: "/src/img/propiedad_" + $i + ".jpg";
+    $imagen: "../src/img/propiedad_" + $i + ".jpg";
     &__house:nth-child(#{$i}) &__photo {
       background-image: linear-gradient(
         180deg, transparent 0, $gradient

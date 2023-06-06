@@ -52,7 +52,7 @@ p {
 }
 
 .header {
-  background-image: linear-gradient(rgba(57, 70, 89, 0.7) 0%, rgba(57, 70, 89, 0.7) 100%), url("/src/img/header.jpg");
+  background-image: linear-gradient(rgba(57, 70, 89, 0.7) 0%, rgba(57, 70, 89, 0.7) 100%), url("../src/img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;

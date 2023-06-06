@@ -2,7 +2,7 @@
 @use "../base/mixins" as m;
 
 .appointment{
-    background-image: url(/src/img/bg_citas.jpg);
+    background-image: url(../src/img/bg_citas.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
